@@ -75,6 +75,8 @@ tweets = api.get_tweets(query = 'Job Opportunities', count = 500)
 - Install **Tweepy** using pip command: `pip install tweepy`
 - Install **TextBlob** using pip command: `pip install textblob`
 
+- or run `pip install -r requirements.txt`
+
 ### How to run?
 
 [![python](https://img.shields.io/badge/python-jobtweets.py-lightgrey.svg?logo=python&style=social)](https://github.com/vinitshahdeo/jobtweets/)
