@@ -60,7 +60,7 @@ class TwitterClient(object):
 
         try:
 
-            fetched_tweets = self.api.search(q=query, count=count)
+            fetched_tweets = self.api.search_tweets(q=query, count=count)
 
             for tweet in fetched_tweets:
 
@@ -80,7 +80,7 @@ class TwitterClient(object):
 
             return tweets
 
-        except tweepy.TweepError as e:
+        except tweepy.errors.TweepyException as e:
             print("Error : " + str(e))
 
 

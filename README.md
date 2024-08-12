@@ -38,7 +38,7 @@ Sentiment Analysis is the process of ‘computationally’ determining whether a
 
 - First of all, I've created a **TwitterClient** class. This class contains all the methods to interact with Twitter API and parsing tweets. We use `__init__` function to handle the authentication of API client.
 
-- In **get_tweets** function, I have used `fetched_tweets = self.api.search(q = query, count = count)` to call the Twitter API to fetch tweets. 'query' is basically, the hashtags.
+- In **get_tweets** function, I have used `fetched_tweets = self.api.search_tweets(q = query, count = count)` to call the Twitter API to fetch tweets. 'query' is basically, the hashtags.
 
 - In **get_tweet_sentiment** I've used textblob module. 
 `analysis = TextBlob(self.clean_tweet(tweet))`
