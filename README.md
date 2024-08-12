@@ -75,7 +75,7 @@ tweets = api.get_tweets(query = 'Job Opportunities', count = 500)
 - Install **Tweepy** using pip command: `pip install tweepy`
 - Install **TextBlob** using pip command: `pip install textblob`
 
-- or run `pip install -r requirements.txt`
+- or run `pip install -r requirements.txt` in project directory.
 
 ### How to run?
 
